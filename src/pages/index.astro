@@ -1,0 +1,36 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Welcome</h1>
+			<p>
+				Welcome to the <a href="https://raceplay.site/">raceplay.site</a> Community Library
+			</p>
+			<p>
+				If you want access to new never seen before videos, make sure to purchase a subscription every now and then, as it keeps the site alive and incentivizes more content production.
+				Follow the preview links from our twitter feed, or
+				check the <a href="/blog">Community</a> section for the free section.<br>
+				Or go to the <a href="/purchase">purchase</a> page directly, to get access to the gated subscription library or to just support the site and keep us running. Thank you for the support in advance.
+				<!--You can go to the Preview section to browse what we have.-->
+			</p>
+			<p>
+				Our main social medias are <a href="https://twitter.com/RaceplayVideos"
+					>Twitter
+				</a> and <a href="https://t.me/RaceplayClips">join us on Telegram</a> to ask questions.
+			</p>
+			
+		</main>
+		<Footer />
+	</body>
+</html>
